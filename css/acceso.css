@@ -1,0 +1,63 @@
+.container {
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+.fondo{
+      height: 100%;
+      background-repeat: no-repeat;
+      background: url(/img/fondo.jpg) no-repeat center center fixed;
+      background-size: 100% 100%;
+      overflow-x: hidden;
+}
+
+.acceso_apariencia {
+  margin-top: 7rem;
+  color: var(--font-color);
+  padding: 40px;
+}
+
+.acceso_apariencia .acceso_titulo {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.acceso_apariencia .acceso_input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: var(--font-color);
+  border: 2px solid var(--border-color);
+}
+
+.acceso_apariencia .acceso_boton {
+  border: none;
+  text-decoration: none;
+  color: rgb(223, 27, 27);
+  cursor: pointer;
+}
+
+.acceso_link {
+  color:ivory;
+}
+
+.acceso_olvidado>a {
+  text-decoration: none;
+  color: var(--elemento-color);
+  font-size: 0.875rem;
+}
+
+.acceso_inscribirse {
+  color: var(--elemento-color);
+  margin: 1.25rem 0rem;
+}
+
+.acceso_inscribirse .acceso_link {
+  color:rgb(176, 30, 30)
+  font-weight: 600;
+}

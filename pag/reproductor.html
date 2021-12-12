@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reinicio.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/iconos.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/reproductor.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <title>reproductor</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav id="navbar" class="navbar">
+          <input type="checkbox" id="hidden_menu" />
+          <label for="hidden_menu">
+            <i class="icono_menu" id="abrir_menu"></i>
+            <i class="icono_cruz" id="cerrar_menu"></i>
+          </label>
+          <span class="logo">
+            <a href="/index.html">
+              <img class="logo_img" src="/img/logo.png" alt="Logo" />
+            </a>
+          </span>
+
+          <ul class="navbar_list">
+            <li class="navbar_tem"><a href="/pag/series.html">Series</a></li>
+            <li class="navbar_tem">
+              <a href="/index.html">Peliculas</a>
+            </li>
+            <li class="navbar_tem">
+              <a href="/pag/seguirviendo.html">Seguir viendo</a>
+            </li>
+            <li class="navbar_tem">
+              <input
+                id="search"
+                class="search-input"
+                type="search"
+                placeholder="Buscar"
+              />
+            </li>
+            <li class="navbar_tem">
+              <a href="/pag/error.html">
+                <button class="link_button">Salir</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="seccion_video">
+        <h1 class="seccion_titulo">Reproductor Netvision</h1>
+        <hr class="linea_hr" />
+
+        <div class="container_video">
+          <video class="video" src="/video/Tunnel-Timer - 15085.mp4" controls></video>
+        </div>
+
+        <article class="descrip_articulo">
+          <h1 class="article-title"></h1>
+          <p><strong class="articulo_resaltado">fecha:</strong> 00/00/00</p>
+          <p><strong class="articulo_resaltado">valoracion:</strong> 9/10</p>
+          <h2 class="articulo_resaltado">Sinopsis:</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum,
+            veniam suscipit, cum impedit rem tenetur, saepe sit dicta quos sequi? Quos
+            consequatur facere quo? Labore tenetur nobis dignissimos dolor possimus,
+            adipisci corporis dolore natus dicta placeat expedita iusto earum repellendus
+            enim ipsum delectus. Praesentium ratione dolorem maiores tempore nobis!
+          </p>
+          
+        </article>
+      </section>
+
+      <aside class="aside_similar">
+        <h1 class="aside_tutulo">Te pueden interesar:</h1>
+
+        <div class="aside_contenedor">
+          <a href="#" class="aside_peli">
+            <img class="aside_img" src="/img/pelis/sor.jpg" alt="Name Film" />
+          </a>
+          <a href="#" class="aside_peli">
+            <img class="aside_img" src="/img/pelis/v.jpg" alt="Name Film" />
+          </a>
+          
+      </aside>
+
+      <footer class="footer">
+        <div class="container-footer">
+          <p>Bootcamp web XII</p>
+          <p>
+           Practica HTML5 & CSS3 
+          </p>
+    </div>
+  </body>
+</html>

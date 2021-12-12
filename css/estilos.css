@@ -1,0 +1,37 @@
+
+:root {
+ 
+    --navbar-height: 3rem;
+    --font-color: #171515;
+    --border-color: #e7e7e7;
+    --elemento-color: #ce237b;
+    --netvision-color: #ef0d7a;
+   
+  }
+
+  /*html,
+  /*body {
+    background: var(--fondo-color);
+    ;
+  }*/
+  /*.body_fondo{
+    background: url(/img/fondo.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+    body, html {
+     color:rgb(248, 246, 246);
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     width:100%;
+     margin: 0px;
+     padding: 5px;
+      
+  }
+  
+  body::-webkit-scrollbar {
+  display: none;
+  }
+  
+  
+  .aside_acceso{
+    display: flex;
+  }

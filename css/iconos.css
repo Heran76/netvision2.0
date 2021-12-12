@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'icomoon'; src: url('../fonts/icomoon.ttf?fj2zqu') format('truetype'),
+  url('../fonts/icomoon.svg?fj2zqu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  font-family: "icomoon" ;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 0,4; 
+}
+
+.icono_cruz:before {
+  content: "\e900";
+}
+
+.icono_menu:before {
+  content: "\e9bd";
+}
+
+.icono_menu_abrir:before {
+  content: "\e9bf";
+}
+
+.icono_menu_cerrar:before {
+  content: "\e9c0";
+}
+
+.icono_estrella_hueco:before {
+  content: "\e9d7";
+}
+
+.icono_estrella_compl:before {
+  content: "\e9d9";
+}
+
+.icono_play:before {
+  content: "\ea1c";
+}

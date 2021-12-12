@@ -1,0 +1,183 @@
+/* Mobile*/
+
+.seccion_pelis .seccion_titulo,
+.section-favourte .seccion_titulo {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--netvision-color);
+  margin: 4rem 4rem 0 .5rem;
+}
+
+.rejilla_pelis .pelirejilla,
+.rejilla_pelis .section-favourte {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--paper-work);
+}
+
+.rejilla_img {
+  margin: unset;
+}
+
+.rejilla_descripcion {
+  position: static;
+}
+
+.rejilla_descripcion {
+  padding: 1rem 1rem;
+  position: static;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 3rem;
+  
+}
+
+.sombraicono {
+  position: absolute;
+  color: var(--netvision-color);
+  text-shadow: black 0 0 5px;
+  top: 0.7rem;
+  right: 0;
+}
+
+.icono_play {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 200px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: right;
+  display: inline-block;
+  font-size: 2.5em;
+  color: var(--netvision-color);
+  display: none;
+}
+
+
+.coment_titulo {
+  font-size: 2rem;
+  color: var(--netvision-color);
+}
+
+.año_comentario {
+  text-transform: capitalize;
+}
+
+.coment_sinopsis {
+  font-size: 1.6rem;
+  color: var(--netvision-color);
+}
+
+.header {
+  grid-area: header;
+  
+}
+
+.seccion_pelis {
+  grid-area: pelis;
+  
+}
+
+.section-favourte {
+  grid-area: favourte;
+  
+}
+
+.footer {
+  grid-area: footer;
+  
+}
+
+.linea_hr {
+  
+  border: crimson solid 2px;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "header"
+    "favourte"
+    "footer"
+  ;
+}
+
+/* Landscape */
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header    header"
+      "favourte favourte"
+      "footer    footer"
+    ;
+  }
+
+  .seccion_pelis .seccion_titulo,
+  .section-favourte .seccion_titulo {
+    margin: 4rem 4rem 0 1.5rem;
+  }
+
+  .coment_titulo,
+  .coment_sinopsis {
+    font-size: 1.2rem;
+  }
+
+  .año_comentario,
+  .sinopsis {
+    font-size: 1rem;
+  }
+
+  .icono_play {
+    display: initial;
+  }
+
+  .rejilla_descripcion {
+    position: absolute;
+    display: none;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  .pelirejilla:hover .rejilla_descripcion {
+    display: block;
+  }
+
+  .rejilla_pelis {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    gap: 0.2rem;
+  }
+}
+
+/* screen width */
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header    header    header"
+      "favourte  favourte  favourte"
+      "footer    footer    footer"
+    ;
+  }
+
+  .seccion_pelis .seccion_titulo,
+  .section-favourte .seccion_titulo {
+    margin: 4rem 4rem 0 2.5rem;
+  }
+
+  .rejilla_pelis {
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    gap: 2rem;
+  }
+}

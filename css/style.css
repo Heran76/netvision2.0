@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+:root {
+  --navbar-height: 3rem;
+  --dark-color: #202125;
+  --font-color: #565656;
+  --netvision-color: #ff0059;
+  --border-color: #e7e7e7;
+  --paper-color: #f5f5f5;
+  --base-color: #2d2e2f;
+}
+
+html,
+body {
+  background: var(--dark-color);
+  font-family: 'Rubik', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-thumb {
+  background: var(--base-color);
+}
