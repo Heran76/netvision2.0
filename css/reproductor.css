@@ -119,6 +119,12 @@
 .wrapper {
   display: grid;
   gap: 1rem;
+  grid-template-areas:
+    "header"
+    "seccion-video"
+    "aside_similar"
+    "footer"
+    ;
  
 }
 
